@@ -3,7 +3,6 @@ package com.hp.easywork.mq;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.rocketmq.common.constant.LoggerName;
 
 
 /**
@@ -12,7 +11,6 @@ import com.alibaba.rocketmq.common.constant.LoggerName;
  * @author shijia.wxr<vintage.wang@gmail.com>
  */
 public abstract class ServiceThread implements Runnable {
-    private static final Logger stlog = LoggerFactory.getLogger(LoggerName.CommonLoggerName);
     // 执行线程
     protected final Thread thread;
     // 线程回收时间，默认90S
